@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" charset="UTF-8">
+    <title>旅游路线推荐</title>
+
+    <style type="text/css">
+        html,body{height:100%;width:100%;margin:0px;padding:0px;}
+        #map{height:60%;width:60%;}
+    </style>
+
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <script src="map.js"></script>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9GqzBZjfGqXYXMzdfuRN9AL4B4PHaY6R"></script>
+
+</head>
+<body>
+<!-- TODO : 顶栏-->
+<div id = "header" class="container">
+
+</div>
+
+<!-- TODO ： 侧栏-->
+<div id = "navigation" class="col-md-3">
+
+</div>
+
+
+
+
+<div id="map">
+
+</div>
+<script>
+    var map = new BMap.Map("map",{minZoom:5,maxZoom:18,enableMapClick:false});
+    var point = new BMap.Point(116.404, 39.915);
+    map.centerAndZoom(point,6);
+
+    map.enableDragging();
+    map.enableScrollWheelZoom();
+    map.disableDoubleClickZoom();
+    var ctrlNav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+    map.addControl(ctrlNav);
+    map.setMapStyle({style:"light"});
+</script>
+
+</body>
+</html>
