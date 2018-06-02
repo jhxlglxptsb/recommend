@@ -2,8 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9827ce73-5530-4f91-bf6c-99ce1dc8e9aa" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic01.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic03.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic04.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic05.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic06.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic07.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic08.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic09.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic10.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/images/pic11.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/LICENSE.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/css/ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/css/ie9.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/ie/backgroundsize.min.htc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/ie/html5shiv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/ie/respond.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/jquery.scrollex.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/jquery.scrolly.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/skel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/js/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/base/_page.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/base/_typography.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_box.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_button.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_contact-method.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_form.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_icon.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_image.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_list.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_section.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_spotlights.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_table.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/components/_tiles.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/ie8.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/ie9.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_banner.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_contact.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_footer.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_header.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_menu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/layout/_wrapper.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/libs/_functions.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/libs/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/libs/_skel.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/libs/_vars.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/assets/sass/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/css/bootstrap-datetimepicker.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/css/bootstrap-datetimepicker.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/generic.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/js/bootstrap-datetimepicker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/js/bootstrap-datetimepicker.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/landing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Web/welcome_page.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/index.html" afterPath="$PROJECT_DIR$/Web/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -164,24 +230,6 @@
               <item name="recommend" type="b2602c69:ProjectViewProjectNode" />
               <item name="recommend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="recommend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recommend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="recommend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="recommend" type="462c0819:PsiDirectoryNode" />
-              <item name="Web" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -256,7 +304,7 @@
       <workItem from="1526826407691" duration="3772000" />
       <workItem from="1526890382163" duration="426000" />
       <workItem from="1527938275046" duration="1079000" />
-      <workItem from="1527939429841" duration="10366000" />
+      <workItem from="1527939429841" duration="10882000" />
     </task>
     <task id="LOCAL-00001" summary="加了个框架">
       <created>1526887286814</created>
@@ -293,17 +341,23 @@
       <option name="project" value="LOCAL" />
       <updated>1527952495361</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="睡觉啦">
+      <created>1527954285674</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527954285674</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19351000" />
+    <option name="totallyTimeSpent" value="19867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -333,7 +387,8 @@
     <MESSAGE value="加了文件夹" />
     <MESSAGE value="改了下路径" />
     <MESSAGE value="改了下welcome_page和Index侧栏，效率低下啊啊啊" />
-    <option name="LAST_COMMIT_MESSAGE" value="改了下welcome_page和Index侧栏，效率低下啊啊啊" />
+    <MESSAGE value="睡觉啦" />
+    <option name="LAST_COMMIT_MESSAGE" value="睡觉啦" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
