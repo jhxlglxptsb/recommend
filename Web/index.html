@@ -10,10 +10,7 @@
     <title>旅行路线推荐</title>
 
 
-    <style type="text/css">
-        html,body{height:100%;width:100%;margin:0px;padding:0px;}
-        #map{height:60%;width:60%;}
-    </style>
+
     <script src="map.js"></script>
 
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
@@ -26,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -40,79 +38,53 @@
 </nav>
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row", data-spy="scroll">
         <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+
             <div class="sidebar-sticky">
                 <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">
-                            <span data-feather="home"></span>
-                            Dashboard <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file"></span>
-                            Orders
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="shopping-cart"></span>
-                            Products
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="users"></span>
-                            Customers
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="bar-chart-2"></span>
-                            Reports
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="layers"></span>
-                            Integrations
-                        </a>
-                    </li>
-                </ul>
+                    <h5>用户名</h5>
+                    <h5><span class="badge badge-secondary">用户名</span></h5>
+                    <h5>出行人数</h5>
+                    <h5><span class="badge badge-secondary">3</span></h5>
+                    <h5>年龄</h5>
+                    <div class="bd-example">
+                        <h5><span class="badge badge-secondary">~10</span>
+                        <span class="badge badge-secondary">30~40</span></h5>
+                    </div>
+                    <h5>性别</h5>
+                    <div class="bd-example">
+                        <h5><span class="badge badge-secondary">男</span>
+                            <span class="badge badge-secondary">女</span></h5>
+                    </div>
+                    <div class="bd-example">
+                        <h5>地理范围</h5>
+                        <h5><span class="badge badge-secondary">北京</span>
+                            <span class="badge badge-secondary">天津</span></h5>
+                    </div>
+                    <h5>出行时间</h5>
+                    <div class="bd-example">
+                        <h5><span class="badge badge-secondary">yyyy-mm-dd</span>
+                            <span class="badge badge-secondary">yyyy-mm-dd</span></h5>
+                    </div>
+                    <h5>兴趣</h5>
+                    <div class="bd-example">
+                        <h5><span class="badge badge-secondary">美食</span>
+                            <span class="badge badge-secondary">文化</span>
+                            <span class="badge badge-secondary">风景</span></h5>
+                    </div>
+                    <h5>交通偏好</h5>
+                    <div class="bd-example">
+                        <h5><span class="badge badge-secondary">飞机</span>
+                            <span class="badge badge-secondary">高铁</span>
+                            <span class="badge badge-secondary">步行</span></h5>
+                    </div>
+                    <h5>住宿偏好</h5>
+                    <h5><span class="badge badge-secondary">豪华型</span></h5>
 
-                <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                    <span>Saved reports</span>
-                    <a class="d-flex align-items-center text-muted" href="#">
-                        <span data-feather="plus-circle"></span>
-                    </a>
-                </h6>
-                <ul class="nav flex-column mb-2">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Current month
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Last quarter
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Social engagement
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <span data-feather="file-text"></span>
-                            Year-end sale
-                        </a>
-                    </li>
+                    <h3 class="mx-auto"><a href="welcome_page.html" class="badge badge-primary">修改信息</a></h3>
+
+                    
                 </ul>
             </div>
         </nav>
