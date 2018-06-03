@@ -113,45 +113,12 @@
                 </div>
             </div>
 
-            <script>
-                function MymergeCells(data,fieldName,colspan,target){
-                    //声明一个map计算相同属性值在data对象出现的次数和
-                    var sortMap = {};
-                    for(var i = 0 ; i < data.length ; i++){
-                        for(var prop in data[i]){
-                            if(prop == fieldName){
-                                var key = data[i][prop]
-                                if(sortMap.hasOwnProperty(key)){
-                                    sortMap[key] = sortMap[key] * 1 + 1;
-                                } else {
-                                    sortMap[key] = 1;
-                                }
-                                break;
-                            }
-                        }
-                    }
-                    for(var prop in sortMap){
-                        console.log(prop,sortMap[prop])
-                    }
-                    var index = 0;
-                    for(var prop in sortMap){
-                        var count = sortMap[prop] * 1;
-                        $(target).bootstrapTable('mergeCells',{index:index, field:fieldName, colspan: colspan, rowspan: count});
-                        index += count;
-                    }
-                }
-            </script>
 
             <div class="row">
-                <div id="map" style="width:600px;height:600px" ></div>
+                <div id="map" style="width:700px;height:600px" ></div>
                 <div class="col-md-5 col-sm-offset-5">
                     <table data-toggle="table"
-                           data-pagination="true"
-                           data-pagination-loop="false"
-                           data-page-size="5"
-                           data-page-list="[5,10,All]"
                            data-mobile-responsive="true"
-                           data-show-export="true"
                            clickToSelect = "true"
                            data-url="./index.json"
                     >
