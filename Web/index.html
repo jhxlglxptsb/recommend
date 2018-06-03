@@ -14,8 +14,6 @@
 
 
 
-    <script src="map.js"></script>
-
     <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
@@ -25,6 +23,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <link href="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -51,11 +55,11 @@
                     <h5>用户名</h5>
                     <h5><span class="badge badge-pill badge-secondary">用户名</span></h5>
                     <h5>出行人数</h5>
-                    <h5><span class="badge badge-pill badge-secondary">3</span></h5>
+                    <h5><span class="badge badge-pill badge-secondary">2</span></h5>
                     <h5>年龄</h5>
                     <div class="bd-example">
-                        <h5><span class="badge badge-pill badge-secondary">~10</span>
-                        <span class="badge badge-pill badge-secondary">30~40</span></h5>
+                        <h5><span class="badge badge-pill badge-secondary">20~30</span>
+                        <!--span class="badge badge-pill badge-secondary">30~40</span--></h5>
                     </div>
                     <h5>性别</h5>
                     <div class="bd-example">
@@ -65,27 +69,28 @@
                     <div class="bd-example">
                         <h5>地理范围</h5>
                         <h5><span class="badge badge-pill badge-secondary">北京</span>
-                            <span class="badge badge-pill badge-secondary">天津</span></h5>
+                            <span class="badge badge-pill badge-secondary">西安</span></h5>
                     </div>
                     <h5>出行时间</h5>
                     <div class="bd-example">
-                        <h5><span class="badge badge-pill badge-secondary">yyyy-mm-dd</span>
-                            <span class="badge badge-pill badge-secondary">yyyy-mm-dd</span></h5>
+                        <h5><span class="badge badge-pill badge-secondary">2019-04-01</span>
+                            <span class="badge badge-pill badge-secondary">2019-04-04</span></h5>
                     </div>
                     <h5>兴趣</h5>
                     <div class="bd-example">
-                        <h5><span class="badge badge-pill badge-secondary">美食</span>
-                            <span class="badge badge-pill badge-secondary">文化</span>
-                            <span class="badge badge-pill badge-secondary">风景</span></h5>
+                        <h5><span class="badge badge-pill badge-secondary">历史</span>
+                            <span class="badge badge-pill badge-secondary">美食</span>
+                            <span class="badge badge-pill badge-secondary">情侣</span></h5>
                     </div>
                     <h5>交通偏好</h5>
                     <div class="bd-example">
-                        <h5><span class="badge badge-pill badge-secondary">飞机</span>
-                            <span class="badge badge-pill badge-secondary">高铁</span>
+                        <h5><span class="badge badge-pill badge-secondary">高铁</span>
+                            <span class="badge badge-pill badge-secondary">地铁</span>
+                            <span class="badge badge-pill badge-secondary">公交</span>
                             <span class="badge badge-pill badge-secondary">步行</span></h5>
                     </div>
                     <h5>住宿偏好</h5>
-                    <h5><span class="badge badge-pill badge-secondary">豪华型</span></h5>
+                    <h5><span class="badge badge-pill badge-secondary">商务型</span></h5>
 
                     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
 
@@ -108,7 +113,65 @@
                 </div>
             </div>
 
-            <div id="map" style="width:1000px;height:600px" ></div>
+            <script>
+                function MymergeCells(data,fieldName,colspan,target){
+                    //声明一个map计算相同属性值在data对象出现的次数和
+                    var sortMap = {};
+                    for(var i = 0 ; i < data.length ; i++){
+                        for(var prop in data[i]){
+                            if(prop == fieldName){
+                                var key = data[i][prop]
+                                if(sortMap.hasOwnProperty(key)){
+                                    sortMap[key] = sortMap[key] * 1 + 1;
+                                } else {
+                                    sortMap[key] = 1;
+                                }
+                                break;
+                            }
+                        }
+                    }
+                    for(var prop in sortMap){
+                        console.log(prop,sortMap[prop])
+                    }
+                    var index = 0;
+                    for(var prop in sortMap){
+                        var count = sortMap[prop] * 1;
+                        $(target).bootstrapTable('mergeCells',{index:index, field:fieldName, colspan: colspan, rowspan: count});
+                        index += count;
+                    }
+                }
+            </script>
+
+            <div class="row">
+                <div id="map" style="width:600px;height:600px" ></div>
+                <div class="col-md-5 col-sm-offset-5">
+                    <table data-toggle="table"
+                           data-pagination="true"
+                           data-pagination-loop="false"
+                           data-page-size="5"
+                           data-page-list="[5,10,All]"
+                           data-mobile-responsive="true"
+                           data-show-export="true"
+                           clickToSelect = "true"
+                           data-url="./index.json"
+                    >
+                        <thead>
+                        <!--注意: json文件中必须有一个名字为data的数组来保存数据-->
+                        <tr>
+                            <th data-field="date"
+                                data-sortable="false"
+                                data-width="100">日期</th>
+                            <th data-field="time">时间</th>
+                            <th data-field="addr"
+                                data-editable="true">地点</th>
+                            <th data-field="traffic"
+                                data-editable="true">交通方式</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+
 
             <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#987cb9 SIZE=10>
             <div id = "attractions">
@@ -263,17 +326,21 @@
     map.addControl(ctrlNav);
     map.setMapStyle({style:"light"});
 
+    /*
     var myGeo = new BMap.Geocoder();
     // 将地址解析结果显示在地图上,并调整地图视野
-    var address = new Array("故宫","南锣鼓巷","香山");
+    var address = new Array("西安北站","古城墙");
+    var city = "西安市";
+    var geoCoord={};
+    map.centerAndZoom(city,12);
+
     for(j = 0; j < address.length; j++) {
-        myGeo.getPoint(address[j], function(point){
+        myGeo.getPoint(address[j], function(address, point){
             if (point) {
                 marker = new BMap.Marker(point);
                 map.addOverlay(marker);
-
             }
-        }, "北京市");
+        }, city);
     }
 
     var driving = new BMap.DrivingRoute(map);    //创建驾车实例
@@ -286,7 +353,32 @@
         map.addOverlay(polyline);
     });
 
-    //map.setViewport(["故宫", "南锣鼓巷", "香山"]);          //调整到最佳视野
+
+*/
+    var myP1 = new BMap.Point(108.959248,34.373588);  //星华宫酒店
+    var myP2 = new BMap.Point(108.953318,34.258243);  //古城墙
+    var myP3 = new BMap.Point(108.944934,34.382293);  //西安北站
+    var myP4 = new BMap.Point(108.950249,34.266723);  //回民街
+
+    var pointsArray = new Array(myP3, myP1, myP2, myP4, myP1);
+    var addressArray = new Array("星华宫酒店", "古城墙", "西安北站", "回民街");
+
+    for(j = 0; j < pointsArray.length; j++) {
+        marker = new BMap.Marker(pointsArray [j]);
+        map.addOverlay(marker);
+    }
+
+    var driving = new BMap.DrivingRoute(map);    //创建驾车实例
+    for(j = 0; j < pointsArray.length-1; j++) {
+        driving.search(pointsArray[j], pointsArray[j+1]);
+    }
+    driving.setSearchCompleteCallback(function(){
+        var pts = driving.getResults().getPlan(0).getRoute(0).getPath();    //通过驾车实例，获得一系列点的数组
+        var polyline = new BMap.Polyline(pts);
+        map.addOverlay(polyline);
+    });
+
+    map.setViewport([myP1, myP2, myP3, myP4]);          //调整到最佳视野
 
 </script>
 
