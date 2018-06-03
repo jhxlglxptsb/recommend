@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
 
     <title>旅行路线推荐</title>
@@ -20,6 +23,8 @@
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=9GqzBZjfGqXYXMzdfuRN9AL4B4PHaY6R"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -104,24 +109,129 @@
             </div>
 
             <div id="map" style="width:1000px;height:600px" ></div>
+
             <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#987cb9 SIZE=10>
             <div id = "attractions">
-            <h4 style="display: inline;">景点</h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <h6 style="display: inline;">故宫 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                南锣鼓巷 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                香山</h6>
+            <h4 style="display: inline;">景点</h4>
+                <div class="demo">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/大雁塔.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">大雁塔</h4>
+                                        <h5><a href="http://piao.ctrip.com/dest/u-_b4_f3_d1_e3_cb_fe/s-tickets/#ctm_ref=vat_hp_sb_lst" class="fa fa-qq">订票</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/大明宫.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">大明宫</h4>
+                                        <h5><a href="http://piao.ctrip.com/dest/u-_b4_f3_d1_e3_cb_fe/s-tickets/#ctm_ref=vat_hp_sb_lst" class="fa fa-qq">订票</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/回民街.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">回民街</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/兵马俑.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">兵马俑</h4>
+                                        <h5><a href="http://piao.ctrip.com/dest/u-_b4_f3_d1_e3_cb_fe/s-tickets/#ctm_ref=vat_hp_sb_lst" class="fa fa-qq">订票</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
-            <div id = "traffic">
-            <h4 style="display: inline;">交通</h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <h6 style="display: inline;"> 汽车 </h6>
-            </div>
-            <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
+
             <div id = "shelter">
-            <h4 style="display: inline;">住宿</h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <h6 style="display: inline;"> 酒店 </h6>
+                <h4 style="display: inline;">住宿</h4>
+                <div class="demo">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/星华宫酒店.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">星华宫酒店</h4>
+                                        <h5><a href="http://hotels.ctrip.com/hotel/13926364.html#ctm_ref=hod_hp_sb_lst" class="fa fa-qq">预定</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
+
+            <div id = "traffic">
+            <h4 style="display: inline;">交通</h4>
+                <div class="demo">
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/高铁.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">北京西->西安北</h4>
+                                        <h5>2019.04.01</h5>
+                                        <h5><a href="http://hotels.ctrip.com/hotel/13926364.html#ctm_ref=hod_hp_sb_lst" class="fa fa-qq">订票</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-sm-5">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="images/飞机.jpeg" alt="">
+                                    </div>
+                                    <div class="box-content">
+                                        <h4 class="title">西安->北京</h4>
+                                        <h5>2019.04.04</h5>
+                                        <h5><a href="http://hotels.ctrip.com/hotel/13926364.html#ctm_ref=hod_hp_sb_lst" class="fa fa-qq">订票</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
+
+
         </main>
     </div>
 </div>
