@@ -12,9 +12,16 @@
 
     <title>旅行路线推荐</title>
 
+    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
 
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
 
-    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified Locales -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/locale/bootstrap-table-zh-CN.min.js"></script>
+    <!--script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script-->
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
@@ -24,11 +31,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
-    <link href="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet">
-    <script src="http://cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
 
+    <link href="http://cdn.bootcss.com/bootstrap-table/1.11.0/bootstrap-table.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
@@ -125,7 +129,7 @@
             <div class="row">
                 <div id="map" style="width:700px;height:600px" ></div>
                 <div class="col-md-4 col-sm-offset-5">
-                    <table data-toggle="table"
+                    <table id="table" data-toggle="table"
                            data-mobile-responsive="true"
                            clickToSelect = "true"
                            data-url="./index.json"
@@ -147,10 +151,10 @@
                     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#987cb9 SIZE=10>
                     <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" >
                         <div class="btn-group mr-2 col-center-block" role="group" aria-label="First group">
-                            <button type="button" class="btn btn-secondary">1</button>
-                            <button type="button" class="btn btn-secondary">2</button>
-                            <button type="button" class="btn btn-secondary">3</button>
-                            <button type="button" class="btn btn-secondary">4</button>
+                            <button type="button" onclick="loadTable_1();" class="btn btn-secondary">1</button>
+                            <button type="button" onclick="loadTable_2();" class="btn btn-secondary">2</button>
+                            <button type="button" onclick="loadTable_3();" class="btn btn-secondary">3</button>
+                            <button type="button" onclick="loadTable_4();" class="btn btn-secondary">4</button>
                         </div>
                     </div>
                 </div>
@@ -286,10 +290,10 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="../../../../assets/js/vendor/popper.min.js"></script>
-<script src="../../../../dist/js/bootstrap.min.js"></script>
+<script src="../../../../dist/js/bootstrap.min.js"></script-->
 
 <!-- Icons -->
 <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
@@ -363,6 +367,138 @@
     });
 
     map.setViewport([myP1, myP2, myP3, myP4]);          //调整到最佳视野
+
+    data_1 = [
+        {
+            "date": "2018-04-01",
+            "time": "8:40~14:15",
+            "addr": "北京西站->西安北站",
+            "traffic": "高铁"
+        },
+        {
+            "date": "2018-04-01",
+            "time": "14:15~15:00",
+            "addr": "西安北站->星华宫酒店",
+            "traffic": "地铁"
+        },
+        {
+            "date": "2018-04-01",
+            "time": "15:00~16:30",
+            "addr": "星华宫酒店->古城墙",
+            "traffic": "地铁"
+        },
+        {
+            "date": "2018-04-01",
+            "time": "18:30~19:00",
+            "addr": "古城墙->回民街晚餐",
+            "traffic": "公交"
+        } ,
+        {
+            "date": "2018-04-01",
+            "time": "19:30",
+            "addr": "回民街晚餐->星华宫酒店",
+            "traffic": "地铁"
+        }
+
+    ];
+
+    data_2 = [
+        {
+            "date": "2018-04-02",
+            "time": "7:00~8:00",
+            "addr": "星华宫酒店->西安站",
+            "traffic": "地铁"
+        },
+        {
+            "date": "2018-04-02",
+            "time": "8:00~9:30",
+            "addr": "西安站->兵马俑博物馆",
+            "traffic": "公交"
+        },
+        {
+            "date": "2018-04-02",
+            "time": "15:00~17:00",
+            "addr": "兵马俑博物馆->西安站",
+            "traffic": "公交"
+        },
+        {
+            "date": "2018-04-02",
+            "time": "17:00~17:30",
+            "addr": "西安站->永兴坊晚餐",
+            "traffic": "公交"
+        } ,
+        {
+            "date": "2018-04-02",
+            "time": "-",
+            "addr": "永兴坊晚餐->星华宫酒店",
+            "traffic": "地铁"
+        }
+
+    ];
+
+    data_3 = [
+        {
+            "date": "2018-04-03",
+            "time": "8:00~9:20",
+            "addr": "星华宫酒店->陕西历史博物馆",
+            "traffic": "地铁"
+        },
+        {
+            "date": "2018-04-03",
+            "time": "14:00~15:00",
+            "addr": "陕西历史博物馆->大明宫",
+            "traffic": "公交"
+        },
+        {
+            "date": "2018-04-03",
+            "time": "17:00~17:40",
+            "addr": "大明宫->回民街晚餐",
+            "traffic": "公交"
+        },
+        {
+            "date": "2018-04-03",
+            "time": "-",
+            "addr": "回民街晚餐->星华宫酒店",
+            "traffic": "地铁"
+        }
+    ];
+
+    data_4 = [
+        {
+            "date": "2018-04-04",
+            "time": "8:00~9:30",
+            "addr": "星华宫酒店->大雁塔",
+            "traffic": "地铁"
+        },
+        {
+            "date": "2018-04-04",
+            "time": "11:00~11:50",
+            "addr": "大雁塔->西安站",
+            "traffic": "公交"
+        },
+        {
+            "date": "2018-04-04",
+            "time": "13:10~20:20",
+            "addr": "西安站->北京南站",
+            "traffic": "高铁"
+        }
+    ];
+
+    function loadTable_1(){
+        $('#table').bootstrapTable('load', data_1);
+    }
+
+    function loadTable_2(){
+        $('#table').bootstrapTable('load', data_2);
+    }
+
+    function loadTable_3(){
+        $('#table').bootstrapTable('load', data_3);
+    }
+
+    function loadTable_4(){
+        $('#table').bootstrapTable('load', data_4);
+    }
 
 </script>
 
